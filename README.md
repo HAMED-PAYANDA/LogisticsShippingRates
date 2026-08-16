@@ -127,7 +127,7 @@ Code Review:
 All contributions undergo a code review process.
 
 Licensing:
-Contributions are licensed
+This project is licensed under the [Apache 2.0 License](LICENSE).
 
 ---
 
