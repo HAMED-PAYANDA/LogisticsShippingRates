@@ -59,13 +59,40 @@ Core Workflow Principles Implemented:
 * **Hosting Platform:** ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white) — Centralized collaboration and code sharing.
 * **Environment:** 💻 **Cloud IDE / Terminal** — Code execution and CLI Git commands.
 ---
+## 📸 Visual Proof
+
+The following screenshots document the chronological, end-to-end Git workflow utilized in this project, from local branching to remote pull request management.
+
+**Step 1: Local Development & Feature Branching**  
+*The workflow begins in the local terminal. This view demonstrates cloning the centralized repository, creating an isolated feature branch (`shipping_calculator_fixes`), and preparing the environment for local code modifications without affecting the production `main` branch.*
+![Local Development Setup](screenshot1.png)
+
+**Step 2: Initial Pull Request & Commit Reversion**  
+*After pushing local changes, an initial Pull Request (#8789) is opened. The commit history showcases practical version control management, including the deliberate reversion of a specific commit to maintain codebase stability, culminating in an automated review by GitHub Actions.*
+![Pull Request and Revert](screenshot2.png)
+
+**Step 3: Centralized Workflow Integration**  
+*The final stage shows a subsequent pull request (#8791) managing an extended history of iterative commits. This illustrates the ongoing contribution cycle to a centralized repository and the successful automated closure of the completed task by the GitHub Actions bot.*
+![Centralized Workflow PR](screenshot3.png)
+
+---
 
 📁 Repository Structure
 ```text
 Centralized-repository-shipping_calculations/
-├── shipping_calculations.py   # Main Python script with shipping logic
-├── README.md                  # Project documentation
-└── .gitignore                 # Excluded system and environment files
+├── .github/
+│   └── workflows/
+│       └── close_pr.yml           # GitHub Actions workflow for automated PR management
+├── .DS_Store                      # macOS custom directory attributes 
+├── .gitignore                     # Specifies intentionally untracked files to ignore in Git
+├── CODE_OF_CONDUCT.md             # Community guidelines for repository contributors
+├── CONTRIBUTING.md                # Instructions and standards for contributing code
+├── LICENSE                        # Open-source license file
+├── README.md                      # Main project documentation
+├── Shipping_Cost_Calculator.py    # Core Python script for shipping calculations
+├── screenshot1.png                # Visual proof: Local terminal workflow
+├── screenshot2.png                # Visual proof: Pull request and commit history
+└── screenshot3.png                # Visual proof: Multiple commits and automation
 ```
 ---
 
